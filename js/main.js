@@ -58,15 +58,14 @@ function renderProjects() {
 }
 function renderContactInfo() {
   const renderString = `<div>
-  <h1>incase you want to reach&nbsp;out</h1>
-  <p>conact me here and here and hopefully there are some cool logos or something.
+  <h1>Incase you want to reach&nbsp;out</h1>
+  <p>Please don't hesitate to reachout. I am open to any and all opertunities. My goal is to never stop learning from others, and to teach everything I know to anyone interested in learning.
   </p>
-  <p>and a resume link</p>
   <ul class="social-icons">
-  <li><a href="#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
-  <li><a href="#"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
-  <li><a href="#"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
-  <li><a href="#"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a></li>
+  <li><a href="https://twitter.com/IamGrimus"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
+  <li><a href="https://www.linkedin.com/in/russell-thomas-34596411/"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
+  <li><a href="https://github.com/IamGrimUs"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
+  <li><a href="mailto:iamgrimus@gmail.com?Subject=Good afternoon sir."><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a></li>
   </ul>
 </div>`;
   $('.contactRender').click(function() {
