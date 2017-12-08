@@ -59,7 +59,7 @@ function renderProjects() {
 function renderContactInfo() {
   const renderString = `<div>
   <h1>Incase you want to reach&nbsp;out</h1>
-  <p>Please don't hesitate to reachout. I am open to any and all opertunities. My goal is to never stop learning from others, and to teach everything I know to anyone interested in learning.
+  <p>Please don't hesitate to contact me. I am open to any and all opertunities. My goal is to never stop learning from others, and to teach everything I know to anyone interested in learning.
   </p>
   <ul class="social-icons">
   <li><a href="https://twitter.com/IamGrimus"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
