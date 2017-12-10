@@ -32,7 +32,7 @@ const projectRenderString = `<div>
     </figure>
     <div class="project-description">
       <h2 class="agglomeration">Agglomeration</h2>
-      <p>Agglomeration was created to combat the feeling of isolation when your new to an existing team or part of remote team. It provides easy access to search out team members for contact or learning a little bit about them.</p>
+      <p>Agglomeration was created to combat the feeling of isolation when you're new to an existing team or part of remote team. It provides easy access to search out team members for contact or learning a little bit about them.</p>
       <ul class="project-icons">
       <li><a href="https://github.com/IamGrimUs/agglomeration"><i class="fa fa-github fa-2x" aria-hidden="true"></i> APP & API</a></li>
       <li><a href="https://agglomeration.herokuapp.com/login.html"><i class="fa  fa-external-link-square fa-2x" aria-hidden="true"></i> Heroku</a></li>
@@ -48,8 +48,8 @@ const projectRenderString = `<div>
     </figure>
     <div class="project-description">
       <h2 class="ataraxia">Ataraxia</h2>
-      <p>A small corner of cyberspace that was built to help you rest your mind. Take some time to breathe deep. Do some light stretching. Reclaim a small part of your day, and get lost in the beauty of the world through photography. Be inspired to embark on adventures waiting for you just beyond the glass.</p>
-      <p>The project was built by accessing the unsplash API to display a random set of beautiful imagery.</p>
+      <p>Is a small corner of cyberspace built to help you find a restful state in the garden of your mind. Take some time to breathe deep. Do some light stretching. Reclaim a small part of your day, and get lost in the beauty of the world through photography. Be inspired to embark on adventures waiting for you just beyond the glass.</p>
+      <p>The project was built by accessing the Unsplash API to display a random set of beautiful imagery.</p>
       <ul class="project-icons">
         <li><a href="https://github.com/IamGrimUs/ataraxia"><i class="fa fa-github fa-2x" aria-hidden="true"></i> APP</a></li>
         <li><a href="https://iamgrimus.github.io/ataraxia/"><i class="fa  fa-external-link-square fa-2x" aria-hidden="true"></i> GitHub pages</a></li>
