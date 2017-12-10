@@ -145,11 +145,23 @@ body {
   min-height: 100%;
   height: auto;
 }
-body {
-  background-color: #cbdbd7;
-  background: linear-gradient(to bottom, #fcfef5 75%, #cbdbd7);
+@media screen and (min-width: 47.5em) {
+  body {
+    background-image: url('../img/treeBear2.png');
+    background-repeat: no-repeat;
+    background-size: 10em;
+    background-position: left bottom;
+    transition: all 0.5s;
+  }
 }
-
+@media screen and (min-width: 67.5em) {
+  body {
+    background-image: url('../img/treeBear2.png');
+    background-repeat: no-repeat;
+    background-size: 15em;
+    background-position: right bottom;
+  }
+}
 /*_______________________ main content container _______________________*/
 main {
   margin: 0 auto;
