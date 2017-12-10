@@ -60,7 +60,7 @@ const projectRenderString = `<div>
 
 const contactRenderString = `<div>
   <h1>Let's talk</h1>
-  <p>Please don't hesitate to contact me. I am open to any and all opportunities. My goal is to be a better person everyday. How do I achomplish the goal? By constantly learning from those around me, and by teach everything I know to those interested in learning.
+  <p>Please don't hesitate to contact me. I am open to any and all opportunities. My goal is to be a better person everyday. How do I accomplish the goal? By constantly learning from those around me, and by teach everything I know to those interested in learning.
   </p>
   <ul class="social-icons">
   <li><a href="https://twitter.com/IamGrimus"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
