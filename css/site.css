@@ -145,7 +145,25 @@ html,
 body {
   min-height: 100%;
   height: auto;
+  background-color: #efefef;
   color: #333333;
+}
+.hidden {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.show {
+  opacity: 1;
+  transition: all 0.5s;
+}
+button.show {
+  border: 0;
+  background-color: inherit;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  margin-top: 2rem;
+  cursor: pointer;
 }
 /*_______________________ fonts _______________________*/
 h1,
@@ -175,8 +193,15 @@ h2 {
 .section-headline {
   font-family: 'Rajdhani', sans-serif;
   font-weight: 400;
-  margin-top: 2.35em;
-  border-bottom: 1px solid #ececec;
+  margin-top: 4.65em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+@media screen and (min-width: 73.5em) {
+  .section-headline {
+    margin-top: 3.15em;
+  }
 }
 p {
   font-family: 'Roboto', sans-serif;
@@ -212,7 +237,7 @@ footer {
     margin-right: 2em;
   }
   .side-bar section {
-    border-right: 1px solid #ececec;
+    border-right: 1px solid #dcdcdc;
     padding-top: 2em;
     padding-bottom: 2em;
     padding-right: 2em;
@@ -251,7 +276,7 @@ figure a {
   width: 100%;
 }
 figure img {
-  border: 2px solid #cbdbd7;
+  border: 2px solid #dcdcdc;
   width: 100%;
   max-width: 440px;
   height: auto;
@@ -313,8 +338,10 @@ footer {
 }
 @media screen and (min-width: 47.5em) {
   footer {
-    margin: 0;
-    padding: 2em 2em;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 4em 2em;
   }
 }
 .social-icons {
