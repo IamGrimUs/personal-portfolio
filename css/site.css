@@ -148,22 +148,26 @@ body {
   background-color: #efefef;
   color: #333333;
 }
-.hidden {
+
+.mbl-hidden {
   opacity: 0;
-  transition: all 0.5s;
+  height: 0;
+  -webkit-transition: opacity 0.3s ease, height 0.3s 0.5s ease;
+  -moz-transition: opacity 0.3s ease, height 0.3s 0.5s ease;
+  -ms-transition: opacity 0.3s ease, height 0.3s 0.5s ease;
+  -o-transition: opacity 0.3s ease, height 0.3s 0.5s ease;
+  transition: opacity 0.3s ease, height 0.3s 1s ease;
 }
-.show {
-  opacity: 1;
-  transition: all 0.5s;
-}
-button.show {
-  border: 0;
-  background-color: inherit;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.75;
-  margin-top: 2rem;
-  cursor: pointer;
+@media screen and (min-width: 67.5em) {
+  .mbl-hidden {
+    opacity: 1;
+    height: auto;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
 }
 /*_______________________ fonts _______________________*/
 h1,
@@ -193,7 +197,6 @@ h2 {
 .section-headline {
   font-family: 'Rajdhani', sans-serif;
   font-weight: 400;
-  margin-top: 4.65em;
   padding-bottom: 0.25em;
   border-bottom: 1px solid #dcdcdc;
 }
