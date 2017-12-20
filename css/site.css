@@ -133,6 +133,7 @@ table {
   margin: 0;
   padding: 0;
 }
+
 *,
 *::after,
 *::before {
@@ -144,121 +145,178 @@ html,
 body {
   min-height: 100%;
   height: auto;
+  color: #333333;
 }
-@media screen and (min-width: 47.5em) {
-  body {
-    background-image: url('../img/treeBear2.png');
-    background-repeat: no-repeat;
-    background-size: 10em;
-    background-position: left bottom;
-    transition: all 0.5s;
-  }
-}
-@media screen and (min-width: 67.5em) {
-  body {
-    background-image: url('../img/treeBear2.png');
-    background-repeat: no-repeat;
-    background-size: 15em;
-    background-position: right bottom;
-  }
-}
-/*_______________________ main content container _______________________*/
-main {
-  margin: 0 auto;
-  padding: 3rem 0;
-  width: 90%;
-}
-@media screen and (min-width: 47.5em) {
-  main {
-    margin-top: 4rem;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-/*_______________________ site content _______________________*/
-
-/*font-family: 'Roboto', sans-serif;
-font-family: 'Rajdhani', sans-serif;
-font-family: 'Great Vibes', cursive;*/
-
-.closed-menu {
-  margin-top: -8rem !important;
-}
-.open-menu {
-  margin-top: 3rem !important;
-}
-
-.content-block {
-  margin: 0 auto;
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-@media screen and (min-width: 37.5em) {
-  .content-block div:first-child {
-    width: 80%;
-    margin-left: 1rem;
-  }
-}
-@media screen and (min-width: 47.5em) {
-  .content-block div:first-child {
-    margin-left: 4rem;
-  }
-  .content-block {
-    margin: 0;
-    width: 90%;
-  }
-  .closed-menu {
-    margin-top: 0 !important;
-  }
-  .open-menu {
-    margin-top: 0 !important;
-  }
-}
-
-.content-block h1 {
+/*_______________________ fonts _______________________*/
+h1,
+h2 {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.25;
+  font-weight: 600;
   margin-top: 1em;
 }
+
+h2 {
+  font-size: 2.25rem;
+}
+
 @media screen and (min-width: 37.5em) {
-  .content-block h1 {
+  h1,
+  h2 {
     font-size: 3rem;
     line-height: 1;
-    margin-top: 0.6rem;
+    margin: 0;
+  }
+  h2 {
+    font-size: 2.25rem;
   }
 }
-.content-block p {
+.section-headline {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 400;
+  margin-top: 2.35em;
+  border-bottom: 1px solid #ececec;
+}
+p {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   line-height: 1.75;
   margin-top: 2rem;
   text-align: left;
 }
 @media screen and (min-width: 37.5em) {
-  .content-block p {
-    font-size: 1.45rem;
+  p {
     line-height: 2;
   }
 }
-/*_______________________ site sidebar _______________________*/
-.side-bar {
-  width: 110px;
+/*_______________________ site-container _______________________*/
+.site-container,
+footer {
+  margin: 0 auto;
+  padding: 3rem 0;
+  width: 90%;
+  max-width: 1200px;
 }
-
 @media screen and (min-width: 47.5em) {
-  .side-bar nav {
-    margin-top: 1.25rem;
-    text-align: right;
+  .site-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
   }
 }
-
-/*_______________________ contact page _______________________*/
+/*_______________________ sidebar _______________________*/
+@media screen and (min-width: 47.5em) {
+  .side-bar {
+    width: 37%;
+    margin-right: 2em;
+  }
+  .side-bar section {
+    border-right: 1px solid #ececec;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+  }
+}
+/*_______________________ main-content _______________________*/
+.content-block {
+  width: 95%;
+  margin: 0;
+  max-width: 580px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@media screen and (min-width: 47.5em) {
+  .content-block {
+    width: 60%;
+    margin-left: 2em;
+  }
+}
+@media screen and (min-width: 57.5em) {
+  .content-block {
+    margin-left: 5em;
+  }
+}
+.project-container {
+  margin-top: 6em;
+}
+figure {
+  margin: 0;
+  width: 100%;
+  margin-top: 1.25em;
+}
+figure a {
+  display: inline-block;
+  width: 100%;
+}
+figure img {
+  border: 2px solid #cbdbd7;
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+}
+figcaption {
+  width: 100%;
+  max-width: 440px;
+}
+p.tech-stack {
+  font-family: 'Rajdhani', sans-serif;
+  color: #4a4a4a;
+  font-size: 1em;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  padding: 0.25em 0.5em;
+  text-align: left;
+  margin: 0;
+  width: 100%;
+}
+figcaption li:first-child {
+  margin-left: 0;
+}
+.project-description h2 {
+  margin: 0;
+  margin-top: 1.5rem;
+}
+.project-description p {
+  margin-top: 1.75em;
+  line-height: 1.75;
+}
+.project-description h2 + p {
+  margin-top: 0.25em;
+}
+.project-icons li {
+  display: inline-block;
+  margin-left: 1em;
+}
+.project-icons li:first-child {
+  margin-left: 0;
+}
+.project-icons li a {
+  color: #000000;
+  display: inline-block;
+  font-family: 'Rajdhani', sans-serif;
+  margin-top: 1.25em;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.project-icons li a:hover {
+  cursor: pointer;
+  opacity: 0.2;
+  transition: all 0.3s;
+}
+/*_______________________ footer _______________________*/
+footer {
+  margin-top: 4em;
+  border-top: 1px solid #dcdcdc;
+  padding: 1em 0;
+}
+@media screen and (min-width: 47.5em) {
+  footer {
+    margin: 0;
+    padding: 2em 2em;
+  }
+}
 .social-icons {
   display: flex;
   margin-top: 3rem;
@@ -275,216 +333,4 @@ font-family: 'Great Vibes', cursive;*/
 .social-icons li a:hover {
   opacity: 0.2;
   transition: all 0.3s;
-}
-
-/*_______________________ project page _______________________*/
-.project-container {
-  margin: 12rem 0;
-}
-figure {
-  margin: 0;
-  width: 100%;
-  margin-top: 1.25em;
-}
-figure a {
-  display: inline-block;
-  width: 100%;
-}
-
-figure img {
-  border: 2px solid #cbdbd7;
-  width: 100%;
-  max-width: 440px;
-  height: auto;
-}
-figure figcaption {
-  width: 100%;
-  max-width: 440px;
-}
-
-figure figcaption p.tech-stack {
-  font-family: 'Rajdhani', sans-serif;
-  color: #4a4a4a;
-  font-size: 1em;
-  line-height: 1.25;
-  letter-spacing: 0.05em;
-  padding: 0.25em 0.5em;
-  text-align: left;
-  margin: 0;
-  width: 100%;
-}
-figure figcaption li:first-child {
-  margin-left: 0;
-}
-.project-description .ataraxia {
-  font-family: 'Great Vibes', cursive;
-  color: #4a4a4a;
-  font-size: 4.5rem;
-}
-.project-description .battle-skratch {
-  font-family: 'Permanent Marker', 'Open Sans', sans-serif;
-  font-size: 2.5rem;
-}
-.project-description .agglomeration {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 600;
-  font-size: 3rem;
-}
-.project-description h2 {
-  margin: 0;
-  margin-top: 1.5rem;
-}
-.project-description p {
-  margin-top: 1.75em;
-  line-height: 1.75;
-}
-.project-description h2 + p {
-  margin-top: 0.25em;
-}
-.project-description .project-icons li {
-  display: inline-block;
-  margin-left: 1em;
-}
-.project-description .project-icons li:first-child {
-  margin-left: 0;
-}
-.project-description .project-icons li a {
-  color: #000000;
-  display: inline-block;
-  font-family: 'Rajdhani', sans-serif;
-  margin-top: 1.25em;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-.project-description .project-icons li a:hover {
-  cursor: pointer;
-  opacity: 0.2;
-  transition: all 0.3s;
-}
-/*_______________________ site menu _______________________*/
-
-/* css menu transition built by Sarath AR
-codepen: https://codepen.io/sarath-ar/pen/NNMONe */
-.hamburger {
-  width: 30px;
-  height: 28px;
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  z-index: 100;
-}
-.hamburger span {
-  background: #193441;
-  display: block;
-  position: absolute;
-  height: 2px;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: all 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
-  -moz-transition: all 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
-  -o-transition: all 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
-  transition: all 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
-  opacity: 1;
-  width: 100%;
-  left: 0;
-}
-.hamburger span:nth-child(1) {
-  top: 0px;
-}
-.hamburger span:nth-child(2) {
-  top: 8px;
-}
-.hamburger span:nth-child(3) {
-  top: 16px;
-}
-.hamburger.open span:nth-child(1) {
-  top: 12px;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-  left: -60px;
-}
-.hamburger.open span:nth-child(3) {
-  top: 12px;
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-}
-
-/*_______________________ menu overlay _______________________*/
-.menu-overlay {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: visible;
-  -webkit-transition: visibility 0.5s ease, opacity 1s ease;
-  -moz-transition: visibility 0.5s ease, opacity 1s ease;
-  -o-transition: visibility 0.5s ease, opacity 1s ease;
-  transition: visibility 0.5s ease, opacity 1s ease;
-}
-.menu-overlay.open {
-  opacity: 1;
-  visibility: visible;
-}
-.nav li {
-  padding-top: 0.5rem;
-  overflow: hidden;
-  opacity: 0;
-  -moz-transform: translateY(-40px);
-  -webkit-transform: translateY(-40px);
-  transform: translateY(-40px);
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-.open .nav li {
-  -moz-transform: translateY(0);
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
-}
-.open .nav li:nth-child(1) {
-  -webkit-transition-delay: 100ms;
-  transition-delay: 100ms;
-}
-.open .nav li:nth-child(2) {
-  -webkit-transition-delay: 200ms;
-  transition-delay: 200ms;
-}
-.open .nav li:nth-child(3) {
-  -webkit-transition-delay: 300ms;
-  transition-delay: 300ms;
-}
-.nav li button {
-  float: right;
-  font-family: 'Rajdhani', sans-serif;
-  background-color: inherit;
-  font-size: 1.75rem;
-  text-align: right;
-  border: 0;
-  border-radius: 0;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.nav li button:hover {
-  opacity: 0.6;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
